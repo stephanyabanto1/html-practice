@@ -6,9 +6,23 @@
     <title>Test</title>
 </head>
 <body>
-    <div>
+    <button id="fs-button"></button>
+    <div style="background-color: red;">
         FUCK YOU TOO BUDDY
     </div>
     <img src="sherk.gif"></img>
 </body>
+<script>
+    const button = document.getElementById("fs-button")
+    button.addEventListener("click", function() {
+    var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+    ;
+    rfs.call(el);
+});
+</script>
 </html>
