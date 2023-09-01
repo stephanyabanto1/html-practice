@@ -14,9 +14,11 @@ function setup() {
 
 function draw(){
     background(220);
-    rotateX(millis()/1000);
-    rotateY(millis()/1000);
-    box();
+    translate(mouseX -200,50,0);
+    rotateY(mouseY/100);
+  
+    fill("pink");
+    // box();
     sphere(100);
 }
 
