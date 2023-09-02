@@ -1,5 +1,7 @@
 function setup() {
     createCanvas(400, 400, WEBGL);
+    print("Hello");
+    background(0);
   }
   
 //   function draw() {
@@ -13,13 +15,15 @@ function setup() {
 
 
 function draw(){
-    background(220);
-    translate(mouseX -200,50,0);
-    rotateY(mouseY/100);
+    
   
+  
+    
+    noStroke();
     fill("pink");
     // box();
-    sphere(100);
+    fill(255);
+    ellipse(mouseX, mmouseY, 24);
 }
 
 
