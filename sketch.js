@@ -1,40 +1,40 @@
-let angle = 0;
+
+Segment seg;
+
+class Segment{
+
+  PVectora;
+  PVectorb ;
+}
+
 
 
 
 
 function setup(){
+createCanvas(400,400);
+seg = new Segment(300,200,100,0);
+  
 
-  createCanvas(800, 800), WEBGL;
-  angleMode(DEGREES);
 }
+
 
 function draw(){
-  background(200);
-
-  apple();
-
-  translate(400,400);
+background(153);
   
+
  
-  rotate(angle);
-  line(0,0,45,80);
-  fill(255);
+}
+  
 
-  rotate(angle*(-3));
-  ellipse(120,120, 150, 90);
 
-  angle = angle + 1;
 
   
 
 
-}
-function apple(){
 
-  circle(300,400,80);
 
-}
+
 
 
 
